@@ -12,7 +12,7 @@ disp(binMessage);
 decodedMessage = strcat(char(bin2dec(binMessage)))'
 disp(decodedMessage);
 
-%Open the file
+
 fid = fopen(audioIn,'r');
 header = fread(fid,40,'uint8=>char');
 dsize  = fread(fid,1,'uint32');
@@ -32,7 +32,6 @@ numchar_bin = de2bi(numchar,32);
 %transpose that boi
 numchar_bin = numchar_bin';
 
-%Make sure the message length plus header fits
 if (len_cover >= len_msg+32)
     %Length of message is encoded
     cover_original(1:32) = bitset(cover_original(1:32),1,numchar_bin(1:32));
