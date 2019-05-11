@@ -1,0 +1,23 @@
+*** Begin of Report ***
+
+Mark integrity:
+
+Carrier Name <- Darude_Sandstorm_stego.mp3
+Mean Integrity <- 0.00%
+Overall Integrity <- 64.08%
+Mark <- not a string...
+
+*** End of Report ***
+
+
+*** Begin of Report ***
+
+Mark integrity:
+
+Carrier Name <- Darude_Sandstorm.mp3
+Mean Integrity <- 60.48%
+Overall Integrity <- 20.96%
+Mark <- "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+
+
+*** End of Report ***
