@@ -35,9 +35,9 @@ numchar_bin = numchar_bin';
 %Make sure the message length plus header fits
 if (len_cover >= len_msg+32)
     %Length of message is encoded
-    cover_original(1:32) = bitset(cover_original(1:32),1,numchar_bin(1:32));
+    cover_original(44:75) = bitset(cover_original(44:75),1,numchar_bin(1:32));
     %Message is encoded
-    cover_original(33:32+len_msg)=bitset(cover_original(33:32+len_msg),1,bin(1:len_msg)');
+    cover_original(76:75+len_msg)=bitset(cover_original(76:75+len_msg),1,bin(1:len_msg)');
     %Stego file is saved
     out = fopen(audioOut,'w');
     fwrite(out,header,'uint8');
